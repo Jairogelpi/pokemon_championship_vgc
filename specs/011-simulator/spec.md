@@ -36,3 +36,13 @@ Antes de implementar, descomponer los comportamientos en tests unitarios/contrat
 ## Activación y siguiente paso
 
 Resolver preguntas relevantes de [OPEN_QUESTIONS](../../docs/planning/OPEN_QUESTIONS.md); crear proposal/design/tasks/verification al comenzar la fase. No introducir capacidades V2+ para satisfacer una fase V1.
+
+## Cobertura detallada obligatoria
+
+Antes de READY y de VERIFIED, revisar [DETAILED_COVERAGE](../../docs/quality/DETAILED_COVERAGE.md): §28 (REQ-S28-xx), §29 (REQ-S29-xx). Asignar todos los subrequisitos y miembros de sus enumeraciones a aceptación/tests; no basta con los tres criterios iniciales resumidos. La fuente completa sigue siendo referencia para ejemplos y casos límite.
+
+## Ramas rivales y modos RNG (responsabilidad compartida REQ-S22)
+
+AC-011-04: plausibilityScore considera meta usage, damage, KO potential, protect, setup, switch synergy, speed control y board position. Pruning ocurre después de generar acciones legales y conserva configuración top-K.
+
+AC-011-05: Simulator ofrece a Search Engine soporte concreto para EXPECTED, WORST_CASE y MONTE_CARLO. EXPECTED conserva probabilidades KO; WORST_CASE explicita conjunto de resultados adversos evaluado; MONTE_CARLO recibe seed y presupuesto de muestras y reporta incertidumbre. Los detalles se concretan antes de READY. Durante construcción puede haber errores de modo no disponible, pero estos no satisfacen el criterio de cierre de ese modo.

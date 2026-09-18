@@ -14,7 +14,7 @@ Lee [AGENTS.md](AGENTS.md), [state.md](state.md) y el [mapa de contexto](docs/ag
 - [Visión](docs/product/VISION.md), [alcance](docs/product/SCOPE.md), [requisitos](docs/product/REQUIREMENTS.md), [glosario](docs/product/GLOSSARY.md).
 - [ARD](docs/architecture/ARD.md), [arquitectura](docs/architecture/ARCHITECTURE.md), [contratos](docs/architecture/API_CONTRACTS.md), [invariantes](docs/architecture/INVARIANTS.md), [decisiones ADR](docs/adr/README.md).
 - [Memoria](memory.md), [convenciones](conventions.md), [roadmap](docs/planning/ROADMAP.md), [preguntas abiertas](docs/planning/OPEN_QUESTIONS.md).
-- [SDD y TDD](docs/workflows/SDD_TDD.md), [subagentes](docs/agents/ORCHESTRATION.md), [skills](docs/agents/SKILL_CATALOG.md), [trazabilidad](docs/quality/TRACEABILITY.md), [aceptación V1](docs/quality/V1_ACCEPTANCE.md).
+- [SDD y TDD](docs/workflows/SDD_TDD.md), [subagentes](docs/agents/ORCHESTRATION.md), [skills](docs/agents/SKILL_CATALOG.md), [trazabilidad](docs/quality/TRACEABILITY.md), [cobertura detallada](docs/quality/DETAILED_COVERAGE.md), [auditoría de cobertura](docs/quality/SPEC_COVERAGE_AUDIT.md), [aceptación V1](docs/quality/V1_ACCEPTANCE.md).
 
 ## Validar esta base documental
 

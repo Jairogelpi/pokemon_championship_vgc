@@ -66,3 +66,7 @@ Cobertura documental, no validación funcional. `PENDING` significa que falta ev
 | REQ-S59 | §59 V1 Definition of Done | [SPEC-016](../../specs/016-replay-debug/spec.md) | PENDING |
 | REQ-S60 | §60 NO entra en V1 | [SPEC-001](../../specs/001-domain-data/spec.md) | PENDING |
 | REQ-S61 | §61 Resultado final V1 | [SPEC-016](../../specs/016-replay-debug/spec.md) | PENDING |
+
+## Subrequisitos y responsabilidades compartidas
+
+El [desglose detallado](DETAILED_COVERAGE.md) complementa la tabla por sección. REQ-S22 tiene SPEC-006 como propietario de RNG determinista y SPEC-011/012 como responsables de modos en simulación/búsqueda. REQ-S00 (objetivo end-to-end) se cierra en SPEC-016 pero obliga a sus fases consumidoras; las opciones recomendables están explícitas en SPEC-013. Una sección transversal no se aplaza íntegramente hasta su fase de cierre.

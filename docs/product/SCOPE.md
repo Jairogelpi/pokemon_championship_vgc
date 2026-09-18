@@ -4,7 +4,7 @@
 
 Las 16 fases de [ROADMAP](../planning/ROADMAP.md) constituyen una V1 única: dominio/datos, equipo propio, daño, speed, eventos/estado, turnos, acciones, meta, beliefs, preview, simulador, búsqueda, recomendaciones, herramientas LLM, web, replay/debug.
 
-Incluye entrada manual y texto confirmado; preview de seis rivales, pick-4 legal, lead/back; combate 2v2 completo dentro del ruleset soportado; incertidumbre, undo, SQLite, snapshots, trazas, degradación ante fallos y validación dual donde sea compatible. Búsqueda limitada de ≥2 ply y modo V1 de daño esperado con probabilidades KO. El motor debe diseñar la interfaz para EXPECTED/WORST_CASE/MONTE_CARLO; la entrega inicial del modo Monte Carlo se concreta en SPEC-011 y Q-010, sin simular que ya existe.
+Incluye entrada manual y texto confirmado; preview de seis rivales, pick-4 legal, lead/back; combate 2v2 completo dentro del ruleset soportado; incertidumbre, undo, SQLite, snapshots, trazas, degradación ante fallos y validación dual donde sea compatible. Búsqueda limitada de ≥2 ply y modo V1 de daño esperado con probabilidades KO. El alcance conserva los tres modos EXPECTED, WORST_CASE y MONTE_CARLO exigidos para Search Engine en §22; el camino principal V1 usa daño esperado y probabilidades KO. SPEC-011 y SPEC-012 deben concretar e implementar el soporte, no solo declarar un enum. Q-010 define semántica y presupuesto; no autoriza posponer modos ni trasladarlos a V2 sin una decisión explícita de alcance.
 
 ## V2+ excluida
 

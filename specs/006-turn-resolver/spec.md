@@ -10,7 +10,7 @@ TurnResolver determinista con acciones dadas y pipeline mecánico contrastado.
 
 - REQ-S17 (original §17): Resolver recibe estado y acciones de ambos lados y devuelve outcome sin elegir estrategia.
 - REQ-S21 (original §21): Resolver cubre las 15 responsabilidades del pipeline; seed e input iguales producen resultado idéntico.
-- REQ-S22 (original §22): RNG inyectado; V1 evalúa daño esperado y probabilidades KO; modos adicionales explícitos y sin fallback silencioso.
+- REQ-S22 (original §22): RNG inyectado; V1 evalúa daño esperado y probabilidades KO. Conservar soporte de EXPECTED, WORST_CASE y MONTE_CARLO en simulación/búsqueda (SPEC-011/012), sin posponer modos ni fallback silencioso.
 - REQ-S23 (original §23): Protect cubre protección, excepciones, spread y cadena consecutiva con probabilidad según ruleset.
 - REQ-S24 (original §24): Fake Out comprueba entrada, prioridad, terreno, abilities, inmunidades y Protect con condiciones explícitas.
 - REQ-S27 (original §27): Switch procesa hazards si legales, entry abilities, clima/terreno, elegibilidad Fake Out y limpieza de volátiles.
@@ -41,3 +41,7 @@ Antes de implementar, descomponer los comportamientos en tests unitarios/contrat
 ## Activación y siguiente paso
 
 Resolver preguntas relevantes de [OPEN_QUESTIONS](../../docs/planning/OPEN_QUESTIONS.md); crear proposal/design/tasks/verification al comenzar la fase. No introducir capacidades V2+ para satisfacer una fase V1.
+
+## Cobertura detallada obligatoria
+
+Antes de READY y de VERIFIED, revisar [DETAILED_COVERAGE](../../docs/quality/DETAILED_COVERAGE.md): §17 (REQ-S17-xx), §21 (REQ-S21-xx), §22 (REQ-S22-xx), §23 (REQ-S23-xx), §24 (REQ-S24-xx), §27 (REQ-S27-xx), §54 (REQ-S54-xx). Asignar todos los subrequisitos y miembros de sus enumeraciones a aceptación/tests; no basta con los tres criterios iniciales resumidos. La fuente completa sigue siendo referencia para ejemplos y casos límite.

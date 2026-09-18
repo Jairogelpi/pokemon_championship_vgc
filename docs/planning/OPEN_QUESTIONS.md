@@ -13,7 +13,7 @@ Resolver con evidencia, no con memoria de otras generaciones. No alterar la fuen
 | Q-007 | Falta equipo real exacto del usuario con SP, moves, nature, ability, item | SPEC-002 y AC-V1-01 | Importación o datos del usuario; no completar desde recuerdos ni usar ejemplo §7 como equipo real |
 | Q-008 | Independencia NCP/Smogon y disponibilidad del oráculo de daño | SPEC-003; validated=true | Documentar linaje, cobertura y referencia externa; UNVERIFIED si falta |
 | Q-009 | Hardware, dataset, percentil y definición operativa de UI «instantánea» | SPEC-013/015; performance | Protocolo benchmark; conservar umbrales originales sin convertirlos en garantías no medidas |
-| Q-010 | EXPECTED/WORST_CASE/MONTE_CARLO: interfaz general y V1 expected+KO; alcance exacto modos opcionales | SPEC-011 | Concretar modos entregados, errores de modo no disponible y roadmap sin borrar requisito original |
+| Q-010 | Semántica, presupuesto y validación de EXPECTED/WORST_CASE/MONTE_CARLO; V1 usa expected+KO como camino principal | SPEC-011/012 | Conservar soporte de los tres modos de §22; concretar funcionamiento/tests. Pendiente no significa opcional; cualquier aplazamiento requiere decisión explícita de alcance |
 | Q-011 | HP rival parcial, reservas ocultas y posterior vacío | SPEC-001/009 | Representar intervalos/unknown y contradicciones; fixtures que no exijan dato oculto |
 | Q-012 | Política de undo y schema migrations de eventos | SPEC-005 | ADR, atomicidad, historial efectivo y replay reproducible |
 

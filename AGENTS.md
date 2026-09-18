@@ -18,7 +18,7 @@ Las instrucciones actuales del usuario prevalecen. `docs/source/V1_SPEC_ORIGINAL
 
 Sigue `docs/workflows/SDD_TDD.md`: explorar → propuesta → spec con aceptación → diseño/ADR → tareas → RED → GREEN → refactor → verificación → revisión → actualización de estado. No convertir un test ausente o saltado en evidencia de éxito. Para cambios documentales, validar trazabilidad y enlaces; no fingir un ciclo RED/GREEN del producto.
 
-Antes de implementar, la tarea debe tener entradas, salidas, fallos, casos límite y criterio verificable. Resuelve detalles reversibles dentro del alcance; escala únicamente decisiones de producto o bloqueos externos reales. Las specs de fases futuras son DRAFT, no permiso para inventar mecánicas.
+Antes de implementar, la tarea debe tener entradas, salidas, fallos, casos límite y criterio verificable. La lista `docs/quality/DETAILED_COVERAGE.md` desglosa cada sección: cargar las secciones asignadas y vincular todos sus subrequisitos y enumeraciones a aceptación/tests. Ni tres criterios genéricos ni un enlace a la fuente bastan para declarar una fase completa. Resuelve detalles reversibles dentro del alcance; escala únicamente decisiones de producto o bloqueos externos reales. Las specs de fases futuras son DRAFT, no permiso para inventar mecánicas.
 
 ## Límites técnicos obligatorios
 

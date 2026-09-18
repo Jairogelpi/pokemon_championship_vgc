@@ -43,6 +43,16 @@ for i, wording in enumerate(dod, 1):
     prefix = f'| AC-V1-{i:02} | {wording} |'
     require(acceptance.count(prefix) == 1, f'AC-V1-{i:02}: criterion missing or changed')
 
+detailed = read('docs/quality/DETAILED_COVERAGE.md')
+subreqs = re.findall(r'^- \[[ xX]\] (REQ-S\d{2}-\d{2}): (.+)$', detailed, re.M)
+require(len(subreqs) == len(set(rid for rid, _ in subreqs)), 'Duplicate detailed requirement IDs')
+for n in range(62):
+    rid = f'REQ-S{n:02}'
+    require(len(re.findall(r'^## '+rid+r'\b', detailed, re.M)) == 1, f'{rid}: missing detailed coverage section')
+    require(any(sub.startswith(rid+'-') for sub, _ in subreqs), f'{rid}: missing detailed checks')
+for spec_file in (ROOT/'specs').glob('*/spec.md'):
+    require('DETAILED_COVERAGE.md' in spec_file.read_text(encoding='utf-8'), f'{spec_file.parent.name}: missing detailed gate')
+
 files = list(ROOT.rglob('*.md'))
 seen = {}
 for path in files:
@@ -71,5 +81,5 @@ require(len(list((ROOT / 'specs').glob('*/spec.md'))) == 16, 'Expected 16 implem
 if errors:
     print('\n'.join('FAIL: '+e for e in errors))
     sys.exit(1)
-print(f'PASS: source SHA-256; 62 requirements and trace mappings; 34 original acceptance criteria; {len(files)} Markdown files; local links; 8 skills; 16 specs.')
+print(f'PASS: source SHA-256; 62 requirements and trace mappings; 34 original acceptance criteria; {len(subreqs)} detailed checks; {len(files)} Markdown files; local links; 8 skills; 16 specs.')
 print('Product implementation, mechanics, Vitest and performance: NOT VERIFIED by this command.')

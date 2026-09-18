@@ -40,3 +40,13 @@ Antes de implementar, descomponer los comportamientos en tests unitarios/contrat
 ## Activación y siguiente paso
 
 Resolver preguntas relevantes de [OPEN_QUESTIONS](../../docs/planning/OPEN_QUESTIONS.md); crear proposal/design/tasks/verification al comenzar la fase. No introducir capacidades V2+ para satisfacer una fase V1.
+
+## Cobertura detallada obligatoria
+
+Antes de READY y de VERIFIED, revisar [DETAILED_COVERAGE](../../docs/quality/DETAILED_COVERAGE.md): §34 (REQ-S34-xx), §50 (REQ-S50-xx), §51 (REQ-S51-xx), §52 (REQ-S52-xx), §56 (REQ-S56-xx), §57 (REQ-S57-xx). Asignar todos los subrequisitos y miembros de sus enumeraciones a aceptación/tests; no basta con los tres criterios iniciales resumidos. La fuente completa sigue siendo referencia para ejemplos y casos límite.
+
+## Cobertura de decisiones recomendables
+
+AC-013-04: Escenarios de aceptación cubren movimientos/objetivos, Protect, switches, Mega, double target, setup, control de velocidad y posicionamiento. No tienen que ser todos óptimos en un mismo escenario: deben ser representables, evaluables, recomendables cuando corresponda y explicables con evidencia.
+
+AC-013-05: La cache de daño diferencia atacante, defensor, move, field, boosts, ability, item, Mega y spread context, además de versiones. Cambiar individualmente cada factor relevante invalida/recalcula; las caches de speed/meta/dex también se prueban por separado.

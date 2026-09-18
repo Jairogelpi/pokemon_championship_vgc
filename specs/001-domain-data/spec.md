@@ -42,3 +42,11 @@ Antes de implementar, descomponer los comportamientos en tests unitarios/contrat
 ## Activación y siguiente paso
 
 Resolver preguntas relevantes de [OPEN_QUESTIONS](../../docs/planning/OPEN_QUESTIONS.md); crear proposal/design/tasks/verification al comenzar la fase. No introducir capacidades V2+ para satisfacer una fase V1.
+
+## Cobertura detallada obligatoria
+
+Antes de READY y de VERIFIED, revisar [DETAILED_COVERAGE](../../docs/quality/DETAILED_COVERAGE.md): §1 (REQ-S01-xx), §2 (REQ-S02-xx), §3 (REQ-S03-xx), §4 (REQ-S04-xx), §5 (REQ-S05-xx), §6 (REQ-S06-xx), §16 (REQ-S16-xx), §60 (REQ-S60-xx). Asignar todos los subrequisitos y miembros de sus enumeraciones a aceptación/tests; no basta con los tres criterios iniciales resumidos. La fuente completa sigue siendo referencia para ejemplos y casos límite.
+
+## Detalle de contratos revisado
+
+AC-001-04: FieldState admite exactamente las variantes originales de weather (NONE/SUN/RAIN/SAND/SNOW) y terrain (NONE/PSYCHIC/GRASSY/ELECTRIC/MISTY), más sus contadores especificados; casos inválidos se rechazan. Los opcionales de PokemonState no permiten inferir información propia requerida.

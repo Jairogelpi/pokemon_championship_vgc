@@ -37,3 +37,7 @@ Antes de implementar, descomponer los comportamientos en tests unitarios/contrat
 ## Activación y siguiente paso
 
 Resolver preguntas relevantes de [OPEN_QUESTIONS](../../docs/planning/OPEN_QUESTIONS.md); crear proposal/design/tasks/verification al comenzar la fase. No introducir capacidades V2+ para satisfacer una fase V1.
+
+## Cobertura detallada obligatoria
+
+Antes de READY y de VERIFIED, revisar [DETAILED_COVERAGE](../../docs/quality/DETAILED_COVERAGE.md): §18 (REQ-S18-xx), §19 (REQ-S19-xx), §20 (REQ-S20-xx). Asignar todos los subrequisitos y miembros de sus enumeraciones a aceptación/tests; no basta con los tres criterios iniciales resumidos. La fuente completa sigue siendo referencia para ejemplos y casos límite.

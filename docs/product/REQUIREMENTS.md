@@ -2,7 +2,7 @@
 
 Estado: BASELINE documental derivada; implementación PENDING. Cada `REQ-Sxx` corresponde exactamente a una sección original. Son requisitos compuestos: sus listas y subcasos íntegros siguen en la fuente. La aceptación resumida aquí no elimina esos subcasos. Las specs los descomponen antes de implementar.
 
-Las discrepancias entre intención y ejemplos se registran en [preguntas abiertas](../planning/OPEN_QUESTIONS.md). La [trazabilidad](../quality/TRACEABILITY.md) asigna cada sección a una fase y evidencia pendiente.
+Las discrepancias entre intención y ejemplos se registran en [preguntas abiertas](../planning/OPEN_QUESTIONS.md). La [trazabilidad](../quality/TRACEABILITY.md) asigna cada sección a una fase y evidencia pendiente. El [desglose detallado](../quality/DETAILED_COVERAGE.md) explicita los subrequisitos que cada fase debe asignar a aceptación/tests; forma parte del gate de cierre.
 
 ## REQ-S00 — Objetivo
 
@@ -140,7 +140,7 @@ Aceptación: Resolver cubre las 15 responsabilidades del pipeline; seed e input 
 
 Fuente: [original §22](../source/V1_SPEC_ORIGINAL.md). Responsable: SPEC-006.
 
-Aceptación: RNG inyectado; V1 evalúa daño esperado y probabilidades KO; modos adicionales explícitos y sin fallback silencioso.
+Aceptación: RNG inyectado; V1 evalúa daño esperado y probabilidades KO. Conservar soporte de EXPECTED, WORST_CASE y MONTE_CARLO en simulación/búsqueda (SPEC-011/012), sin posponer modos ni fallback silencioso.
 
 ## REQ-S23 — Protect
 

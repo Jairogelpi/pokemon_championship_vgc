@@ -8,7 +8,7 @@ Leer tarea y secciones originales, inspeccionar repositorio y fuentes necesarias
 
 Crear `specs/NNN-slug/` con `proposal.md`, `spec.md`, `design.md`, `tasks.md`, `verification.md` cuando la fase esté próxima. Las fases lejanas empiezan con spec DRAFT. Definir problema, alcance/no alcance, requisitos fuente, entradas/salidas, errores, incertidumbre y casos Given/When/Then. Registrar ADR si cambia una decisión estructural.
 
-READY requiere: aceptación comprobable, dependencias disponibles o separadas, contrato preciso y ninguna regla inventada. No pedir aprobación para detalles rutinarios ya autorizados; cambios de alcance y decisiones de producto no resueltas se consultan. Estado READY es una revisión técnica, no aprobación externa ficticia.
+READY requiere: aceptación comprobable, dependencias disponibles o separadas, contrato preciso y ninguna regla inventada. Revisar las secciones correspondientes de `docs/quality/DETAILED_COVERAGE.md`; asignar todos sus subrequisitos y miembros de listas a tareas/tests. Para VERIFIED, aportar evidencia por subrequisito; los criterios resumidos de la spec no bastan. No pedir aprobación para detalles rutinarios ya autorizados; cambios de alcance y decisiones de producto no resueltas se consultan. Estado READY es una revisión técnica, no aprobación externa ficticia.
 
 ## 3. Diseñar y dividir
 

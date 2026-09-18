@@ -38,3 +38,13 @@ Antes de implementar, descomponer los comportamientos en tests unitarios/contrat
 ## Activación y siguiente paso
 
 Resolver preguntas relevantes de [OPEN_QUESTIONS](../../docs/planning/OPEN_QUESTIONS.md); crear proposal/design/tasks/verification al comenzar la fase. No introducir capacidades V2+ para satisfacer una fase V1.
+
+## Cobertura detallada obligatoria
+
+Antes de READY y de VERIFIED, revisar [DETAILED_COVERAGE](../../docs/quality/DETAILED_COVERAGE.md): §30 (REQ-S30-xx), §31 (REQ-S31-xx), §32 (REQ-S32-xx), §33 (REQ-S33-xx). Asignar todos los subrequisitos y miembros de sus enumeraciones a aceptación/tests; no basta con los tres criterios iniciales resumidos. La fuente completa sigue siendo referencia para ejemplos y casos límite.
+
+## Evaluador completo y selección de modo (responsabilidad compartida REQ-S22)
+
+AC-012-04: El desglose de score incluye material, boardPosition, speedControl, offensivePressure, defensivePosition, fieldControl, setup, information y penalizaciones koRisk, trappedRisk, opponentPressure. Casos controlados comprueban su efecto; no reemplazarlo por score basado solo en HP. KO tiene penalización grande y preservar piezas críticas depende del rival.
+
+AC-012-05: Search permite seleccionar EXPECTED, WORST_CASE y MONTE_CARLO, identifica modo/config/seed y utiliza la semántica validada del simulador. No sustituye la búsqueda por un único roll ni trata un modo pendiente como terminado.

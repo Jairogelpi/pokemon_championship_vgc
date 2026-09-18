@@ -5,6 +5,7 @@ Actualizado: 2026-09-18. Fase: **bootstrap documental**. Producto: **no implemen
 ## Completado
 
 - Original íntegro, catálogo de requisitos, cobertura de 62 secciones y 34 criterios de V1.
+- Segunda revisión: desglose de subrequisitos en DETAILED_COVERAGE, ampliación de aceptación y corrección de ambigüedad RNG. Informe: docs/quality/SPEC_COVERAGE_AUDIT.md.
 - Producto, arquitectura, contratos de diseño, invariantes, ADR y riesgos.
 - Flujo SDD/TDD, roles, skills, planificación de 16 fases y paquete inicial SPEC-001.
 - Validador documental ejecutable. Su resultado reproducible se registra en `docs/quality/BOOTSTRAP_VERIFICATION.md`.
